@@ -6,4 +6,4 @@ Run the following in the checkout folder
     cd code
     quasar dev
 
-See also
+See also http://quasar-framework.org/guide/quasar-cli.html

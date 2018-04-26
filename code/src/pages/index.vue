@@ -33,7 +33,10 @@ export default {
 
   // Fetches posts when the component is created.
   created() {
-    axios.get(`http://13.82.106.207/?q=mobileapi/markersjson.json`)
+    // temporarily use static copy of some sample data until azure account is restored
+    axios.get(`https://rawgit.com/HackMGM/demobicentennial-app/master/sample-json-data/top-level-gps.json`)
+    // disabled azure server reference
+    // axios.get(`http://13.82.106.207/?q=mobileapi/markersjson.json`)
     .then(response => {
       // JSON responses are automatically parsed.
       this.posts = response.data
